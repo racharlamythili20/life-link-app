@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "LifeLink",
+    "slug": "lifelink",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.lifelink.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "LifeLink needs your location to find nearby blood donors and hospitals.",
+        "NSLocationAlwaysUsageDescription": "LifeLink uses background location to update your donor status.",
+        "NSCameraUsageDescription": "LifeLink needs camera access for QR code scanning."
+      }
+    },
+    "android": {
+      "package": "com.lifelink.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "LifeLink uses location to find nearby donors."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-eas-project-id"
+      }
+    }
+  }
+}

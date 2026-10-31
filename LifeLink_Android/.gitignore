@@ -1,0 +1,26 @@
+# dependencies
+/node_modules
+
+# expo & react-native build outputs
+/.expo/
+/dist/
+/web-build/
+android/app/build/
+android/build/
+ios/build/
+*.apk
+*.aab
+
+# environment variables & secrets
+.env
+.env.local
+.env.*
+
+# Metro & caches
+.metro-health-check*
+*.log
+
+# OS & IDE
+.DS_Store
+.idea/
+.vscode/
